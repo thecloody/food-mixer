@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #d6a7f7; /* Fondo lila */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    object-fit: cover;
+}
+
+.food-image:hover {
+    transform: scale(1.1);
+}
+
+canvas {
+    border: 2px solid black;
+    background-color: white;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.social-share {
+    margin-top: 20px;
+}
+
+.social-share a {
+    display: block;
+    margin: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-share a:hover {
+    text-decoration: underline;
+}
+
+#logrosList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#logrosList li {
+    margin: 5px;
+    font-size: 18px;
+}
+
+#logrosList li.new {
+    color: #28a745;
+}

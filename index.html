@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezcla de Alimentos</title>
+    
+    <!-- Metaetiquetas para redes sociales -->
+    <meta property="og:title" content="Mi Página de Mezcla de Alimentos">
+    <meta property="og:description" content="Crea deliciosas combinaciones de alimentos con esta divertida herramienta interactiva.">
+    <meta property="og:image" content="ruta-a-la-imagen-de-previsualización.jpg">
+    <meta property="og:url" content="https://tu-sitio.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mezcla de Imágenes de Alimentos</h1>
+        
+        <div class="gallery">
+            <h3>Selecciona y arrastra los ingredientes</h3>
+            <img src="images/tomate.png" alt="tomate" class="food-image">
+            <img src="images/queso.png" alt="queso" class="food-image">
+            <img src="images/lechuga.png" alt="lechuga" class="food-image">
+            <img src="images/pollo.png" alt="pollo" class="food-image">
+            <img src="images/huevo.png" alt="huevo" class="food-image">
+            <img src="images/pan.png" alt="pan" class="food-image">
+        </div>
+
+        <canvas id="plateCanvas" width="500" height="500"></canvas>
+
+        <div class="controls">
+            <button onclick="clearPlate()">Limpiar Plato</button>
+            <button onclick="downloadPlate()">Descargar Plato</button>
+            <button id="fusionButton">Fusionar Alimentos</button>
+            <button id="copyLinkButton">Copiar Enlace</button>
+        </div>
+
+        <div class="social-share">
+            <h3>Compartir:</h3>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tu-sitio.com" target="_blank">Compartir en Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tu-sitio.com&text=Mira esta increíble página" target="_blank">Compartir en Twitter</a>
+            <a href="https://wa.me/?text=https://tu-sitio.com" target="_blank">Compartir en WhatsApp</a>
+        </div>
+
+        <div id="logros">
+            <h3>Logros obtenidos:</h3>
+            <ul id="logrosList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
